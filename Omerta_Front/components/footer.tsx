@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import {
   Tv,
@@ -10,8 +12,10 @@ import {
   Instagram,
   Youtube,
 } from "lucide-react";
+import { useI18n } from "@/locales/client";
 
 export default function Footer() {
+  const t = useI18n();
   return (
     <footer className="bg-black text-white border-t border-gray-800">
       <div className="max-w-7xl mx-auto px-4 lg:px-8 pt-16 pb-6">
@@ -28,8 +32,9 @@ export default function Footer() {
               </div>
             </Link>
             <p className="text-gray-400 mb-8 leading-relaxed text-sm">
-              Premium IPTV service with over 50,000 channels worldwide.
-              Experience luxury entertainment like never before.
+              {/* Premium IPTV service with over 50,000 channels worldwide.
+              Experience luxury entertainment like never before. */}
+              {t("footer.description")}
             </p>
             <div className="flex space-x-3">
               <a
@@ -62,7 +67,7 @@ export default function Footer() {
           {/* Quick Links */}
           <div>
             <h3 className="text-lg font-semibold mb-6 text-white">
-              Quick Links
+              {t("footer.quickLinks")}
             </h3>
             <ul className="space-y-4">
               <li>
@@ -70,7 +75,7 @@ export default function Footer() {
                   href="/"
                   className="text-gray-400 hover:text-white transition-colors text-sm"
                 >
-                  Home
+                  {t("footer.links.home")}
                 </Link>
               </li>
               <li>
@@ -78,7 +83,7 @@ export default function Footer() {
                   href="/packages"
                   className="text-gray-400 hover:text-white transition-colors text-sm"
                 >
-                  Packages
+                  {t("footer.links.packages")}
                 </Link>
               </li>
               <li>
@@ -86,7 +91,7 @@ export default function Footer() {
                   href="/how-it-works"
                   className="text-gray-400 hover:text-white transition-colors text-sm"
                 >
-                  How It Works
+                  {t("footer.links.howItWorks")}
                 </Link>
               </li>
               <li>
@@ -94,7 +99,7 @@ export default function Footer() {
                   href="/faq"
                   className="text-gray-400 hover:text-white transition-colors text-sm"
                 >
-                  FAQ
+                  {t("footer.links.faq")}
                 </Link>
               </li>
             </ul>
@@ -102,14 +107,16 @@ export default function Footer() {
 
           {/* Support */}
           <div>
-            <h3 className="text-lg font-semibold mb-6 text-white">Support</h3>
+            <h3 className="text-lg font-semibold mb-6 text-white">
+              {t("footer.support")}
+            </h3>
             <ul className="space-y-4">
               <li>
                 <a
                   href="#"
                   className="text-gray-400 hover:text-white transition-colors text-sm"
                 >
-                  Help Center
+                  {t("footer.links.helpCenter")}
                 </a>
               </li>
               <li>
@@ -117,7 +124,7 @@ export default function Footer() {
                   href="#"
                   className="text-gray-400 hover:text-white transition-colors text-sm"
                 >
-                  Setup Guide
+                  {t("footer.links.setupGuide")}
                 </a>
               </li>
               <li>
@@ -125,7 +132,7 @@ export default function Footer() {
                   href="#"
                   className="text-gray-400 hover:text-white transition-colors text-sm"
                 >
-                  Privacy Policy
+                  {t("footer.links.privacyPolicy")}
                 </a>
               </li>
               <li>
@@ -133,7 +140,7 @@ export default function Footer() {
                   href="#"
                   className="text-gray-400 hover:text-white transition-colors text-sm"
                 >
-                  Terms of Use
+                  {t("footer.links.termsOfUse")}
                 </a>
               </li>
             </ul>
@@ -142,7 +149,7 @@ export default function Footer() {
           {/* Contact Info */}
           <div>
             <h3 className="text-lg font-semibold mb-6 text-white">
-              Contact Info
+              {t("footer.contactInfo")}
             </h3>
             <div className="space-y-4">
               <div className="flex items-center gap-3">
@@ -153,16 +160,18 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-yellow-500 flex-shrink-0" />
-                <span className="text-gray-400 text-sm">+212 612 345 678</span>
+                <span className="text-gray-400 text-sm">(+212)612345678</span>
               </div>
               <div className="flex items-center gap-3">
                 <MessageCircle className="h-5 w-5 text-yellow-500 flex-shrink-0" />
-                <span className="text-gray-400 text-sm">WhatsApp Support</span>
+                <span className="text-gray-400 text-sm">
+                  {t("footer.contact.whatsappSupport")}
+                </span>
               </div>
               <div className="flex items-center gap-3">
                 <Clock className="h-5 w-5 text-yellow-500 flex-shrink-0" />
                 <span className="text-gray-400 text-sm">
-                  24/7 Premium Support
+                  {t("footer.contact.premiumSupport")}
                 </span>
               </div>
             </div>
@@ -172,10 +181,10 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="text-center">
-            <p className="text-gray-400 text-sm">
+            <p className="text-gray-400 text-sm flex flex-row items-center justify-center gap-1 rtl:flex-row">
               © {new Date().getFullYear()}{" "}
-              <span className="text-yellow-400 "> StreamPro </span> . All rights
-              reserved.
+              <span className="text-yellow-400 "> StreamPro </span>.{" "}
+              {t("footer.copyright")}
             </p>
           </div>
         </div>

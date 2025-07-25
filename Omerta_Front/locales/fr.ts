@@ -66,13 +66,13 @@ export default {
   // Testimonials Section
   testimonials: {
     badge: "Avis Clients",
-    title: "Ce Que Disent Nos {customers}",
+    title: "Ce Que Disent Nos Clients",
     description:
       "Rejoignez des milliers de clients premium satisfaits dans le monde entier",
     items: [
       {
         text: "StreamPro a complètement transformé mon expérience de divertissement. La qualité est incroyable et la sélection de chaînes est absolument inégalée !",
-        name: "Jean Dupont",
+        name: "JOHN DOE",
         role: "Abonné Premium",
       },
       {
@@ -82,7 +82,7 @@ export default {
       },
       {
         text: "Le support client est exceptionnel ! Ils m'ont aidé à tout configurer en quelques minutes. Le meilleur service IPTV premium que j'aie jamais utilisé.",
-        name: "Pierre Durand",
+        name: "Mike Johnson",
         role: "Abonné 3 Mois",
       },
     ],
@@ -199,7 +199,7 @@ export default {
   // How It Works Section
   howItWorks: {
     badge: "Processus Simple",
-    title: "Comment Ça {works}",
+    title: "Comment Ça Marche",
     description: "Commencez avec StreamPro en seulement 3 étapes simples",
     steps: [
       {
@@ -291,7 +291,7 @@ export default {
       whatsappSupport: "Support WhatsApp",
       premiumSupport: "Support Premium 24/7",
     },
-    copyright: "© 2025 StreamPro. Tous droits réservés.",
+    copyright: "Tous droits réservés.",
   },
 
   // Common

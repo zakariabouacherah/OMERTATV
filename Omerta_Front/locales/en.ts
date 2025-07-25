@@ -66,7 +66,7 @@ export default {
   // Testimonials Section
   testimonials: {
     badge: "Customer Reviews",
-    title: "What Our {customers} Say",
+    title: "What Our Customers Say",
     description: "Join thousands of satisfied premium customers worldwide",
     items: [
       {
@@ -76,7 +76,7 @@ export default {
       },
       {
         text: "Amazing premium service! The 4K quality is crystal clear and I love having access to channels from around the world. Highly recommended!",
-        name: "Sarah Miller",
+        name: "Marie Martin",
         role: "Annual Subscriber",
       },
       {
@@ -198,7 +198,7 @@ export default {
   // How It Works Section
   howItWorks: {
     badge: "Simple Process",
-    title: "How It {works}",
+    title: "How It works",
     description: "Get started with StreamPro in just 3 simple steps",
     steps: [
       {
@@ -288,7 +288,7 @@ export default {
       whatsappSupport: "WhatsApp Support",
       premiumSupport: "24/7 Premium Support",
     },
-    copyright: "© 2025 StreamPro. All rights reserved.",
+    copyright: "All rights reserved.",
   },
 
   // Common

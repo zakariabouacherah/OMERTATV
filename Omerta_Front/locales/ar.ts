@@ -65,22 +65,22 @@ export default {
   // Testimonials Section
   testimonials: {
     badge: "آراء العملاء",
-    title: "ما يقوله {customers}",
+    title: "ماذا يقول عملاؤنا",
     description: "انضم إلى آلاف العملاء المميزين الراضين حول العالم",
     items: [
       {
         text: "لقد غيّر StreamPro تجربة الترفيه الخاصة بي تماماً. الجودة لا تصدق واختيار القنوات لا مثيل له!",
-        name: "أحمد محمد",
+        name: "JOHN DOE",
         role: "مشترك مميز",
       },
       {
         text: "خدمة مميزة رائعة! جودة 8K واضحة تماماً وأحب الوصول إلى القنوات من جميع أنحاء العالم. أنصح به بشدة!",
-        name: "فاطمة علي",
+        name: "Marie Martin",
         role: "مشترك سنوي",
       },
       {
         text: "دعم العملاء ممتاز! ساعدوني في إعداد كل شيء في دقائق. أفضل خدمة IPTV مميزة استخدمتها على الإطلاق.",
-        name: "محمد حسن",
+        name: "Mike Johnson",
         role: "مشترك 3 أشهر",
       },
     ],
@@ -197,7 +197,7 @@ export default {
   // How It Works Section
   howItWorks: {
     badge: "عملية بسيطة",
-    title: "كيف {works}",
+    title: "كيف يعمل",
     description: "ابدأ مع StreamPro في 3 خطوات بسيطة فقط",
     steps: [
       {
@@ -286,7 +286,7 @@ export default {
       whatsappSupport: "دعم واتساب",
       premiumSupport: "دعم مميز 24/7",
     },
-    copyright: "© 2025 StreamPro. جميع الحقوق محفوظة.",
+    copyright: "جميع الحقوق محفوظة.",
   },
 
   // Common
